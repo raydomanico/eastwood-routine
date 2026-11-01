@@ -12,30 +12,32 @@ python3 -m http.server 8000
 
 Open http://localhost:8000. Keep using the same browser and address to retain your data. Stop the server with Ctrl+C.
 
-## Your default workday
+## Night shift from November 7, 2026
+
+Shift start dates are Tuesday–Saturday, 9:00 PM–6:00 AM the next morning. The first new shift is Saturday, November 7, ending Sunday, November 8 at 6:00 AM. November 6 and earlier keep the previous day-shift templates and checkmarks. Existing saved weekday edits remain available for that earlier period; a separate night template is initialized automatically, including when importing an older backup.
 
 | Time | Activity |
 | --- | --- |
-| 4:00–4:30 AM | Wake, breakfast, gear |
-| 4:30–6:00 AM | Motorcycle commute (budget 90 minutes) |
-| 6:00–6:30 AM | Arrival buffer |
-| 6:30 AM–3:30 PM | Shift, including a movable lunch break |
-| 3:30–5:00 PM | Motorcycle commute home |
-| 5:00–5:20 PM | Snack and decompress |
-| 5:20–5:40 PM | Light exercise or mobility |
-| 5:40–6:15 PM | Shower and dinner |
-| 6:15–6:45 PM | Coding |
-| 6:45–7:30 PM | Personal time |
-| 7:30–8:00 PM | Prepare and wind down |
-| 8:00 PM–4:00 AM next day | Eight hours of sleep |
+| 4:00–4:30 PM | Wake and breakfast |
+| 4:30–5:00 PM | Light exercise and shower |
+| 5:00–6:00 PM | Coding |
+| 6:00–6:30 PM | Main meal |
+| 6:30–6:45 PM | Personal time |
+| 6:45–7:00 PM | Pack food and riding gear |
+| 7:00–8:30 PM | Ride to Eastwood (90-minute budget) |
+| 8:30–9:00 PM | Arrival buffer |
+| 9:00 PM–6:00 AM next day | Work, with adjustable midnight meal break |
+| 6:00–7:30 AM next day | Ride home |
+| 7:30–8:00 AM next day | Light meal, shower and wind down |
+| 8:00 AM–4:00 PM next day | Eight hours of daytime sleep |
 
-Ride estimates are the user's usual 60–90 minutes, not live traffic predictions. Leave earlier if conditions need more time; shorten optional evening activities after delays. Sunday and Monday use flexible recovery templates. Adjust lunch to your employer's actual break schedule.
+Begin the daytime sleep rhythm before the first shift if practical. Sunday and Monday nights are off, with editable recovery plans that keep the same sleep window. Saturday night's work ends Sunday morning. Travel budgets use your usual 60–90 minutes, not live traffic predictions. Adjust breaks to your actual workplace schedule.
 
 ## Use and persistence
 
 - The initial date uses Asia/Manila. Select any date or press Today.
-- Edit schedule changes that weekday's recurring template across all weeks. Add/remove activities and change names and times. Overnight end times display `(+1d)`. No overlap validation is imposed, so review your edited times.
-- Checkmarks belong to the selected calendar date. Sleep is credited to the date when bedtime begins.
+- Edit schedule changes that weekday's recurring template within the selected period (before November 7 or November 7 onward). Add/remove activities and change names and times. Rows are ordered: an earlier start time than the previous row moves to the next calendar day. Overnight rows and following morning rows show next-day labels. No overlap validation is imposed, so review your edited times.
+- Checkmarks belong to the selected calendar date. All night-routine activities, including next-morning sleep, are credited to the selected shift start date.
 - Weekly progress uses Monday–Sunday and counts Tuesday–Saturday activities, including future days. Recovery-day checkmarks are shown separately and excluded from the percentage.
 - Existing activity IDs keep their checkmarks after edits. Removing an activity removes it from calculated totals, including historical totals; this is a personal tracker, not an immutable audit log.
 - Data saves automatically in this browser's localStorage. There is **no account, server database, or automatic cross-device sync**. Clearing site data or changing browsers/website addresses will hide or remove it. Private browsing may discard it.
